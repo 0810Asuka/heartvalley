@@ -1,0 +1,92 @@
+/* pages/index/index.wxss */
+.container {
+  padding-top: 40rpx;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #f8f8f8;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.consultation-list {
+  margin-top: 100rpx;
+}
+
+.consultation-item {
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.arrow {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.divider {
+  width: 100%;
+  height: 1rpx;
+  background-color: rgba(163, 163, 163, 0.25);
+}
+
+.item-content {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin-left: 30rpx;
+}
+
+
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1rpx solid rgba(0, 0, 0,0.05);
+  margin-right: 20rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  color: #333;
+  margin-left: 18rpx;
+}
+
+.info {
+  margin-left: 140rpx;
+  width: 60%;
+}
+
+/* .info view {
+  display: flex;
+  justify-content: space-between;
+} */
+
+text {
+  font-size: 24rpx;
+  color: #666;
+}
+
+
+.no-consultation {
+  margin-top: 400rpx;
+  text-align: center;
+  color: #999;
+  font-size: 32rpx;
+}

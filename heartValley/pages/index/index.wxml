@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <view class="top-bar" bindtap="goToConsultation">点击跳转到咨询界面</view>
+
+  <view class="consultation-list">
+    <view wx:for="{{ consultationRecords }}" wx:key="{{ item.id }}" class="consultation-item" bindtap="goToRecordDetails">
+      <view class="item-header">
+        <view class="time">{{ item.time }}</view>
+        <image class="arrow" src="/static/button/r_arrow.png"></image>
+      </view>
+      <view class="divider"></view>
+      <view class="item-content">
+        <view class="counselor-info">
+          <image class="avatar" src="{{ item.counselor.avatar }}"></image>
+          <view class="name">{{ item.counselor.name }}</view>
+        </view>
+        <view class="info">
+          <view>
+            <text>咨询用时</text>
+            <view class="duration">{{ item.duration }}</view>
+          </view>
+          <view>
+            <text>我的评价</text>
+            <view class="rating">{{ item.rating }}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{ consultationRecords.length === 0 }}" class="no-consultation">尚未进行过咨询</view>
+  </view>
+</view>
+
