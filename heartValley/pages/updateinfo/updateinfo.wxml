@@ -23,3 +23,4 @@
   </view>
   <button class="button" bindtap="saveInformation">保存修改</button>
 </view>
+

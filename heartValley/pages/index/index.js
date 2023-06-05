@@ -128,14 +128,14 @@ Page({
 
   goToConsultation() {
     wx.navigateTo({
-      url: "/pages/consultation/consultation",
+      url: "/pages/waiting/waiting",
     });
   },
 
   goToRecordDetails(event) {
     const recordId = event.currentTarget.dataset.recordId;
     wx.navigateTo({
-      url: `/pages/recordDetails/recordDetails?id=${recordId}`,
+      url: `/pages/record/record?id=${recordId}`,
     });
   },
 

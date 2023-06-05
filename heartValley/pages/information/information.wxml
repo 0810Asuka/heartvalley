@@ -28,3 +28,4 @@
   <button class="button" bindtap="modifyInformation">修改个人信息</button>
   <button class="button" bindtap="logout">退出登录</button>
 </view>
+
