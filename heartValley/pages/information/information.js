@@ -9,6 +9,7 @@ Page({
     realName: "张三",
     contactNumber: "123456789",
     emergencyContactName: "李四",
+    gender:"男",
     emergencyContactNumber: "987654321",
   },
 
