@@ -2,6 +2,8 @@
   "pages": [
     "pages/login/login",
     "pages/index/index",
+    "pages/waiting/waiting",
+    "pages/chooseCounselor/chooseCounselor",
     "pages/register/register",
     "pages/forgetpwd/forgetpwd",
     "pages/consultation/consultation",
