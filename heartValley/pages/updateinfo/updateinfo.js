@@ -4,6 +4,7 @@ Page({
   data: {
     avatar: "",
     realName: "张三",
+    gender:"男",
     emergencyContactName: "李四",
     emergencyContactNumber: "987654321",
   },
