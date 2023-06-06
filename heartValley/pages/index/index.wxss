@@ -9,9 +9,29 @@
   left: 0;
   width: 100%;
   height: 100rpx;
-  background: #f8f8f8;
+  background: #ffffff;
+  display: flex;
   line-height: 100rpx;
   text-align: center;
+  z-index: 10;
+}
+
+.top-bar text {
+  margin-left: 120rpx;
+  width: 60%;
+  font-size: 36rpx;
+}
+
+.add {
+  align-items: center;
+  justify-content: center;
+}
+.add image{
+  margin-top: 10rpx;
+  margin-left: 0rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
 }
 
 .consultation-list {
@@ -21,7 +41,11 @@
 .consultation-item {
   background: #fff;
   padding: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
   margin-bottom: 20rpx;
+  border: 1rpx solid rgba(0, 0, 0);
+  border-radius: 10rpx;
 }
 
 .item-header {
@@ -69,7 +93,7 @@
 }
 
 .info {
-  margin-left: 140rpx;
+  margin-left: 100rpx;
   width: 60%;
 }
 
@@ -83,10 +107,20 @@ text {
   color: #666;
 }
 
+.myrating {
+  display: block;
+  z-index: 5;
+}
+
 
 .no-consultation {
   margin-top: 400rpx;
   text-align: center;
   color: #999;
   font-size: 32rpx;
+}
+
+.vacant {
+  width: 100%;
+  height:20rpx;
 }

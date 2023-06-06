@@ -30,7 +30,7 @@
 }
 
 .counselor-info {
-  margin-left: 30rpx;
+  margin-left: 20rpx;
   width: 80%;
 }
 
@@ -79,8 +79,9 @@
   margin-top: 10rpx;
 }
 
-.score {
-  margin-top: 5rpx;
+.rate {
+  margin-top: 10rpx;
+  display: block;
 }
 
 .vacant {

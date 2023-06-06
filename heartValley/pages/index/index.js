@@ -10,7 +10,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 2,
@@ -20,7 +20,7 @@ Page({
           name: "李四",
         },
         duration: "45分钟",
-        rating: "非常满意",
+        rating: "5",
       },
       {
         id: 3,
@@ -30,7 +30,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 4,
@@ -40,7 +40,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 5,
@@ -50,7 +50,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 6,
@@ -60,7 +60,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 7,
@@ -70,7 +70,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 8,
@@ -80,7 +80,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 9,
@@ -90,7 +90,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 10,
@@ -100,7 +100,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 11,
@@ -110,7 +110,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       },
       {
         id: 12,
@@ -120,7 +120,7 @@ Page({
           name: "张三",
         },
         duration: "30分钟",
-        rating: "满意",
+        rating: "4",
       }
       // ...
     ],

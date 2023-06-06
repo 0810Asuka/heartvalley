@@ -11,7 +11,8 @@
   </view>
   <view class="item">
     <text class="label">性别：</text>
-    <text class="value">{{ gender }}</text>
+    <text class="value" wx:if="{{gender == 'female'}}">女</text>
+    <text class="value" wx:else>男</text>
   </view>
   <view class="item">
     <text class="label">联系电话：</text>

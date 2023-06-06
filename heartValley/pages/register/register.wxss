@@ -21,7 +21,7 @@
 }
 
 .input-content {
-  padding: 0 60rpx;
+  padding: 0 40rpx;
 }
 
 .input-item {
@@ -31,7 +31,7 @@
   padding: 0 30rpx;
   background: #f8f6fc;
   height: 80rpx;
-  border-radius: 4px;
+  border-radius: 8rpx;
   margin-bottom: 40rpx;
 }
 
@@ -45,6 +45,7 @@
 
 .input-item .tit {
   margin-top: 15rpx;
+  margin-left: 15rpx;
   height: 50rpx;
   line-height: 50rpx;
   font-size: 28rpx;
@@ -52,7 +53,31 @@
   width: 30%;
 }
 
+.gendertit {
+  margin-left: 0rpx;
+}
+
+.radio-group {
+  margin-left: -6rpx;
+  margin-top: 5rpx;
+  width:70%;
+  align-items: center;
+}
+
+.radio-label {
+  margin-right: 40rpx;
+}
+
 .input-item input {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #303133;
+  width: 70%;
+}
+
+.input-item radio-group {
   margin-top: 10rpx;
   margin-left: 20rpx;
   height: 60rpx;
@@ -86,4 +111,27 @@
   padding: 0;
 }
 
+/* radio样式*/
+radio .wx-radio-input {
+  width: 30rpx;
+  height: 30rpx;
+  border: 2rpx solid #b3b3b3;/* 外圈边框，未选中状态默认灰色*/
+  border-radius: 50%;
+  background: none;
+}
+/*radio选中后内部样式*/
+radio .wx-radio-input.wx-radio-input-checked {
+  border: 2rpx solid #15e0a2 !important;/* 选中状态外圈边框颜色*/
+  background-color: white !important;/* 外圈边框与内圈实心圆间的内容的颜色，默认上边的绿色*/
+}
+/*radio选中后内部中心*/
+radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 60%;
+  height: 60%;
+  background: #15e0a2;/* 内圈实心圆选中颜色*/
+  border-radius: 50%;
+  content: '';/* 隐藏✔️*/
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
 

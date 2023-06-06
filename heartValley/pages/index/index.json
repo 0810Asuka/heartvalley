@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "Rate":"/components/star/star"
+  }
 }

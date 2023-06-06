@@ -1,4 +1,5 @@
 // pages/login/login.js
+const app = getApp();
 import request from '../../utils/request'
 Page({
 
@@ -56,12 +57,13 @@ Page({
       return;
     }
     //后端验证
-    
+    //验证通过后，将用户手机号设置为全局变量phone的值
+    app.globalData.phone = phone;
     //测试用直接跳转，完成后删掉
-    wx.redirectTo({
-      url: '/pages/index/index'
-    })
-  },
+     wx.redirectTo({
+       url: '/pages/index/index'
+     })
+   },
   //跳转到忘记密码界面
   toforgetpwd(){
     wx.navigateTo({

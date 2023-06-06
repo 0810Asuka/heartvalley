@@ -23,8 +23,19 @@
         <input type="text" placeholder="请输入真实姓名" data-test="abc" data-type="name" id="realName" bindinput="handleInput" />
       </view>
       <view class="input-item">
-        <text class="tit">性别:</text>
-        <input type="text" placeholder="请输入真实性别" data-test="abc" data-type="name" id="realName" bindinput="handleInput" />
+        <text class="tit gendertit">性别:</text>
+        <view class="radio-group">
+          <radio-group bindchange="handleGenderChange">
+            <label class="radio-label">
+              <radio value="male" checked="{{gender === 'male'}}" />
+              <text class="radio-text">男</text>
+            </label>
+            <label class="radio-label">
+              <radio value="female" checked="{{gender === 'female'}}" />
+              <text class="radio-text">女</text>
+            </label>
+          </radio-group>
+        </view>
       </view>
       <view class="input-item-1 input-item">
         <text class="tit">紧急联系人电话:</text>

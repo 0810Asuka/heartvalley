@@ -6,9 +6,12 @@
       请输入您的手机号和新密码
     </view>
     <view style="padding: 50rpx;">
-    <button class="confirm-btn" open-type="getPhoneNumber" type="primary" bindgetphonenumber="getPhoneNumber">请允许我们获取您的手机号</button>
     </view>
     <view class="input-content">
+      <view class="input-item">
+        <text class="tit">手机号码:</text>
+        <input type="text" placeholder="请输入手机号码" data-test="abc" data-type="phone" id="phone" bindinput="handleInput" />
+      </view>
       <view class="input-item">
         <text class="tit">新密码:</text>
         <input type="password" placeholder="请输入新密码" data-test="abc" data-type="password" id="newPassword" bindinput="handleInput" />
@@ -16,6 +19,11 @@
       <view class="input-item">
         <text class="tit">确认密码:</text>
         <input type="password" placeholder="请再次输入新密码" data-test="abc" data-type="password" id="confirmPassword" bindinput="handleInput" />
+      </view>
+      <view class="input-item">
+        <text class="tit">验证码:</text>
+        <input type="text" placeholder="请输入验证码" data-test="abc" data-type="code" id="verificationCode" bindinput="handleInput" />
+        <button class="get-code" bindtap="getCode">获取验证码</button>
       </view>
     </view>
     <button class="confirm-btn" bindtap="resetPassword">重置密码</button>

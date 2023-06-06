@@ -1,4 +1,6 @@
 // pages/information/information.js
+const app = getApp();
+const phone = app.globalData.phone;
 Page({
 
   /**
@@ -7,10 +9,10 @@ Page({
   data: {
     avatar: "",
     realName: "张三",
-    contactNumber: "123456789",
+    contactNumber: phone,
     emergencyContactName: "李四",
-    gender:"男",
-    emergencyContactNumber: "987654321",
+    gender:"male",
+    emergencyContactNumber: "15012345678",
   },
 
   chooseavatar(e){
@@ -52,8 +54,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-
+  onLoad() {
+   
   },
 
   /**
@@ -67,7 +69,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      contactNumber: app.globalData.phone,
+    });
   },
 
   /**

@@ -9,6 +9,7 @@ Page({
     phone: '', // 手机号
     newPassword: '', // 新密码
     confirmPassword: '', // 确认密码
+    verificationCode: '',//验证码
   },
 
   /**
@@ -25,9 +26,26 @@ Page({
    * 重置密码
    */
   async resetPassword() {
-    const { phone, newPassword, confirmPassword } = this.data;
+    const { phone, newPassword, confirmPassword, verificationCode} = this.data;
 
-  
+    //手机号码需要已经注册
+    if(false) {
+      wx.showToast({
+        title: '手机号尚未注册',
+        icon: 'none',
+      });
+      return;
+    }
+
+    //手机号正则检验
+    let phoneReg = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/;
+    if(!phoneReg.test(phone)){
+      wx.showToast({
+        title: '手机号格式错误',
+        icon: 'none'
+      })
+      return;
+    }
 
     // 新密码不为空
     if (!newPassword) {
@@ -49,6 +67,17 @@ Page({
 
     // 后端验证
     // ...
+    //后端验证通过后
+    {
+      wx.showToast({
+        title: '重置密码成功',
+        icon: 'none',
+      });
+       //测试用直接跳转，完成后删掉
+      wx.redirectTo({
+        url: '/pages/login/login'
+      })
+    } 
   },
 
   /**

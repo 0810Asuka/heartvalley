@@ -21,7 +21,7 @@
 }
 
 .input-content {
-  padding: 0 60rpx;
+  padding: 0 40rpx;
 }
 
 .input-item {
@@ -43,7 +43,7 @@
   margin-top: 15rpx;
   height: 50rpx;
   line-height: 50rpx;
-  font-size: 35rpx;
+  font-size: 28rpx;
   color: #606266;
   width: 28%;
 }
@@ -52,9 +52,22 @@
   margin-top: 10rpx;
   margin-left: 20rpx;
   height: 60rpx;
-  font-size: 35rpx;
+  font-size: 28rpx;
   color: #303133;
   width: 72%;
+}
+
+.get-code {
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  border-radius: 30rpx;
+  background: hsl(150, 65%, 52%);
+  color: rgb(0, 0, 0);
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  text-align: center;
 }
 
 .confirm-btn {

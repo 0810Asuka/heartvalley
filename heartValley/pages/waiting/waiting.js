@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    buttonText: "请等待...",
+    buttonText: "我同意（15）",
     canAgree: false,
     countNumber: 15,
   },

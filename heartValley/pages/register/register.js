@@ -11,6 +11,7 @@ Page({
     password: '', // 密码
     confirmPassword: '', // 确认密码
     realName: '', // 真实姓名
+    gender: '',//性别
     emergencyPhone: '', // 紧急联系人电话
     emergencyName: '', // 紧急联系人姓名
     verificationCode: '', // 验证码
@@ -22,6 +23,13 @@ Page({
       [type]: event.detail.value,
     });
   },
+
+  handleGenderChange(event) {
+    console.log(event.detail);
+    this.setData({
+    gender: event.detail.value,
+    });
+    },
   //注册
   async register() {
     // 获取数据
@@ -30,6 +38,7 @@ Page({
       password,
       confirmPassword,
       realName,
+      gender,
       emergencyPhone,
       emergencyName,
       verificationCode,
@@ -55,6 +64,15 @@ Page({
       })
       return;
     }
+    //如果手机号已被注册，提示注册过（需要后端协助）
+    if(false){
+      wx.showToast({
+        title: '该手机号码已被注册',
+        icon: 'none',
+      });
+      return;
+    }
+
     if (!password) {
       wx.showToast({
         title: '密码不能为空',
@@ -88,6 +106,14 @@ Page({
       });
       return;
     }
+
+    if (!gender) {
+      wx.showToast({
+      title: '请选择性别',
+      icon: 'none',
+      });
+      return;
+      }
 
     if (!emergencyPhone) {
       wx.showToast({
@@ -136,9 +162,18 @@ Page({
         icon: 'none',
       });
       return;
-    }
-
-    
+    } 
+    //后端验证通过后
+    {
+      wx.showToast({
+        title: '注册成功',
+        icon: 'none',
+      });
+       //测试用直接跳转，完成后删掉
+      wx.redirectTo({
+        url: '/pages/login/login'
+      })
+    } 
   },
   
   /**

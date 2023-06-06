@@ -19,7 +19,8 @@
         <view class="pingjia">
         <text>综合评价</text>
         </view>
-        <view class="score">{{ item.score }}</view>
+        <Rate starValue="{{ item.score }}" isShowStarValue="{{true}}" disabled="{{true}}" id="star" WH="60" class="rate">
+        </Rate>
       </view>
     </view>
   </view>

@@ -12,7 +12,7 @@ Page({
         past:1,
         state:"free",
         name: "张三",
-        score: "满意",
+        score: "5",
       },
       {
         id: 2,
@@ -20,7 +20,7 @@ Page({
         past:1,
         state:"busy",
         name: "张三",
-        score: "满意",
+        score: "3.6",
       },
       {
         id: 3,
@@ -28,7 +28,7 @@ Page({
         past:0,
         state:"free",
         name: "张三",
-        score: "满意",
+        score: "2.8",
       },
       {
         id: 4,
@@ -36,7 +36,7 @@ Page({
         past:0,
         state:"busy",
         name: "张三",
-        score: "满意",
+        score: "1.7",
       },
       {
         id: 5,
@@ -44,7 +44,7 @@ Page({
         past:1,
         state:"busy",
         name: "张三",
-        score: "满意",
+        score: "4",
       },
       {
         id: 6,
@@ -52,7 +52,7 @@ Page({
         past:0,
         state:"free",
         name: "张三",
-        score: "满意",
+        score: "0.3",
       },
     ]
   },
