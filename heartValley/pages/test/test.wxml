@@ -1,0 +1,2 @@
+<!--pages/test/test.wxml-->
+<header avatar="{{avatar}}" name="{{name}}" bind:complete="onComplete"></header>

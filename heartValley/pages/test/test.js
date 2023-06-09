@@ -1,11 +1,18 @@
-// pages/record/record.js
+// pages/test/test.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    avatar: "/static/images/tabs/tab-personal-current.png",
+    name: "咨询师",
+  },
 
+  onComplete() {
+    // 在这里对新界面进行改动
+    console.log('Complete event triggered!');
+    // ...
   },
 
   /**

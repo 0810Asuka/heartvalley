@@ -1,2 +1,20 @@
 <!--pages/consultation/consultation.wxml-->
-<text>pages/consultation/consultation.wxml</text>
+<view class="container">
+  <view class="session-list">
+    <view wx:for="{{ sessionList }}" wx:key="{{ item.id }}" class="session-item" bindtap="todetail">
+      <view class="avatar-wrapper">
+        <image class="avatar" src="{{ item.avatar }}"></image>
+      </view>
+      <view class="session-info">
+        <view class="session-top">
+          <view class="name">{{ item.name }}</view>
+          <view class="time">{{ item.time }}</view>
+        </view>
+        <view class="session-bottom">
+          <text class="message">{{ item.message }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/test/test",
     "pages/login/login",
+    "pages/head/head",
     "pages/index/index",
     "pages/waiting/waiting",
     "pages/chooseCounselor/chooseCounselor",
@@ -9,7 +11,8 @@
     "pages/consultation/consultation",
     "pages/information/information",
     "pages/updateinfo/updateinfo",
-    "pages/record/record"
+    "pages/evaluation/evaluation",
+    "pages/convey/convey"
   ],
   "tabBar": {
     "color": "#333",

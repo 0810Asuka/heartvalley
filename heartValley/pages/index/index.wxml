@@ -12,7 +12,7 @@
     <view wx:for="{{ consultationRecords }}" wx:key="{{ item.id }}" class="consultation-item" >
       <view class="item-header">
         <view class="time">{{ item.time }}</view>
-        <image class="arrow" src="/static/button/r_arrow.png" bindtap="goToRecordDetails"></image>
+        <image class="arrow" src="/static/button/r_arrow.png" bindtap="goToevaluation" data-id="{{item.id}}" data-time="{{item.time}}" data-name="{{item.counselor.name}}" data-avatar="{{item.counselor.avatar}}" data-rating="{{item.rating}}"></image>
       </view>
       <view class="divider"></view>
       <view class="item-content">

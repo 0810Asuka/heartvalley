@@ -5,7 +5,61 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    sessionList: [
+      {
+        id: 1,
+        avatar: "/static/images/tabs/tab-personal-current.png",
+        name: "咨询师A",
+        time: "2023-05-07 15:30:25",
+        message: "用户A：你好，我有一个问题想咨询一下。我有一个问题想咨询一下。我有一个问题想咨询一下。我有一个问题想咨询一下。",
+      },
+      {
+        id: 2,
+        avatar: "/static/images/tabs/tab-personal-current.png",
+        name: "咨询师B",
+        time: "2023-05-07 14:20:10",
+        message: "用户B：我最近感觉很焦虑，不知道该怎么办。",
+      },
+      {
+        id: 3,
+        avatar: "/static/images/tabs/tab-personal-current.png",
+        name: "咨询师C",
+        time: "2023-05-07 10:45:55",
+        message: "用户C：你好，请问你有时间进行咨询吗？",
+      },
+      {
+        id: 7,
+        avatar: "/static/images/tabs/tab-personal-current.png",
+        name: "咨询师A",
+        time: "2023-05-07 15:30:25",
+        message: "用户A：你好，我有一个问题想咨询一下。我有一个问题想咨询一下。我有一个问题想咨询一下。我有一个问题想咨询一下。",
+      },
+      {
+        id: 4,
+        avatar: "/static/images/tabs/tab-personal-current.png",
+        name: "咨询师B",
+        time: "2023-05-07 14:20:10",
+        message: "用户B：我最近感觉很焦虑，不知道该怎么办。",
+      },
+      {
+        id: 5,
+        avatar: "/static/images/tabs/tab-personal-current.png",
+        name: "咨询师A",
+        time: "2023-05-07 15:30:25",
+        message: "用户A：你好，我有一个问题想咨询一下。我有一个问题想咨询一下。我有一个问题想咨询一下。我有一个问题想咨询一下。",
+      },
+      {
+        id: 6,
+        avatar: "/static/images/tabs/tab-personal-current.png",
+        name: "咨询师B",
+        time: "2023-05-07 14:20:10",
+        message: "用户B：我最近感觉很焦虑，不知道该怎么办。",
+      }
+    ],
+  },
+  //改动todetail函数，查看完整聊天记录
+  todetail(){
+    console.log("success");
   },
 
   /**

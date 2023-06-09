@@ -132,12 +132,19 @@ Page({
     });
   },
 
-  goToRecordDetails(event) {
-    const recordId = event.currentTarget.dataset.recordId;
+  goToevaluation(event) {
+    const { id, time, name, avatar, rating } = event.currentTarget.dataset;
+    const encodedId = encodeURIComponent(id);
+    const encodedTime = encodeURIComponent(time);
+    const encodedName = encodeURIComponent(name);
+    const encodedAvatar = encodeURIComponent(avatar);
+    const encodedRating = encodeURIComponent(rating);
+  
     wx.navigateTo({
-      url: `/pages/record/record?id=${recordId}`,
+      url: `/pages/evaluation/evaluation?id=${encodedId}&time=${encodedTime}&name=${encodedName}&avatar=${encodedAvatar}&rating=${encodedRating}`,
     });
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
